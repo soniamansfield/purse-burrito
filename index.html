@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purse Burrito - Keep Your Burrito Safe & Stylish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-label">Mild</span>
+    </button>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">Purse Burrito</div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="stripes" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                                <rect x="0" y="0" width="4" height="8" fill="#FF8FA3"/>
+                                <rect x="4" y="0" width="4" height="8" fill="#FFB3C6"/>
+                            </pattern>
+                            <pattern id="dots" x="0" y="0" width="15" height="15" patternUnits="userSpaceOnUse">
+                                <circle cx="7.5" cy="7.5" r="2" fill="#1B2845" opacity="0.3"/>
+                            </pattern>
+                            <linearGradient id="tortilla" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F4E4C1;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#E8D4A8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D4C4A0;stop-opacity:1" />
+                            </linearGradient>
+                            <radialGradient id="containerGrad" cx="50%" cy="40%">
+                                <stop offset="0%" style="stop-color:#FFE5EC;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFB3C6;stop-opacity:1" />
+                            </radialGradient>
+                        </defs>
+
+                        <!-- Shadow -->
+                        <ellipse cx="200" cy="260" rx="100" ry="15" fill="#1B2845" opacity="0.15"/>
+
+                        <!-- Burrito (the actual food) -->
+                        <!-- Bottom end of burrito (folded tortilla) -->
+                        <ellipse cx="200" cy="230" rx="35" ry="35" fill="#D4C4A0"/>
+                        <path d="M 165 230 Q 180 245 200 245 Q 220 245 235 230" fill="#C4A574" opacity="0.7"/>
+
+                        <!-- Burrito body -->
+                        <rect x="165" y="130" width="70" height="100" fill="url(#tortilla)"/>
+                        <ellipse cx="200" cy="130" rx="35" ry="35" fill="url(#tortilla)"/>
+
+                        <!-- Tortilla edge shading -->
+                        <path d="M 165 130 L 165 230 Q 172 235 200 235 Q 228 235 235 230 L 235 130" fill="none" stroke="#C4A574" stroke-width="2"/>
+
+                        <!-- Fillings showing at top -->
+                        <ellipse cx="200" cy="130" rx="30" ry="30" fill="#A0522D"/>
+                        <ellipse cx="185" cy="125" rx="12" ry="8" fill="#8B4513"/>
+                        <ellipse cx="215" cy="128" rx="10" ry="7" fill="#FF6347"/>
+                        <ellipse cx="200" cy="135" rx="15" ry="6" fill="#FFD700"/>
+                        <ellipse cx="190" cy="128" rx="8" ry="5" fill="#90EE90"/>
+                        <ellipse cx="210" cy="133" rx="9" ry="5" fill="#FFF"/>
+                        <ellipse cx="205" cy="125" rx="6" ry="4" fill="#FF4500"/>
+
+                        <!-- Container - transparent cylinder over burrito -->
+                        <g opacity="0.85">
+                            <!-- Top rim with pattern -->
+                            <ellipse cx="200" cy="100" rx="55" ry="18" fill="url(#stripes)"/>
+                            <ellipse cx="200" cy="97" rx="55" ry="18" fill="url(#containerGrad)" opacity="0.5"/>
+
+                            <!-- Container body -->
+                            <rect x="145" y="100" width="110" height="140" fill="url(#containerGrad)" opacity="0.6"/>
+                            <rect x="145" y="100" width="110" height="140" fill="url(#dots)"/>
+
+                            <!-- Bottom rim -->
+                            <ellipse cx="200" cy="240" rx="55" ry="18" fill="url(#stripes)"/>
+
+                            <!-- Container edges/shine -->
+                            <ellipse cx="200" cy="100" rx="55" ry="18" fill="none" stroke="#1B2845" stroke-width="3"/>
+                            <line x1="145" y1="100" x2="145" y2="240" stroke="#1B2845" stroke-width="3"/>
+                            <line x1="255" y1="100" x2="255" y2="240" stroke="#1B2845" stroke-width="3"/>
+                            <ellipse cx="200" cy="240" rx="55" ry="18" fill="none" stroke="#1B2845" stroke-width="3"/>
+
+                            <!-- Shine/reflection -->
+                            <ellipse cx="165" cy="170" rx="8" ry="40" fill="#FFF" opacity="0.4"/>
+                        </g>
+
+                        <!-- Lid (separate, on top) -->
+                        <g transform="translate(0, -10)">
+                            <ellipse cx="200" cy="85" rx="60" ry="12" fill="#1B2845"/>
+                            <ellipse cx="200" cy="82" rx="60" ry="12" fill="#2D3E5F"/>
+                            <ellipse cx="200" cy="80" rx="25" ry="8" fill="#FFB3C6"/>
+                            <rect x="195" y="65" width="10" height="15" rx="5" fill="#1B2845"/>
+                        </g>
+                    </svg>
+                </div>
+                <h1>Your Burrito.<br>Beautifully Protected.</h1>
+                <p class="hero-subtitle">The elegant solution to on-the-go dining. Keep your favorite burrito fresh and your bag pristine with our luxurious burrito containers.</p>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn-primary">Explore Collection</a>
+                    <a href="#features" class="btn-text">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Designed for Life on the Go</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="80" fill="#FFE5EC" opacity="0.3"/>
+                            <rect x="50" y="70" width="100" height="60" rx="15" fill="#1B2845"/>
+                            <rect x="55" y="75" width="90" height="10" rx="3" fill="#FFB3C6"/>
+                            <circle cx="100" cy="100" r="35" fill="none" stroke="#1B2845" stroke-width="4" stroke-dasharray="5,5"/>
+                            <path d="M 75 100 L 90 115 L 125 80" stroke="#FF8FA3" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Leak-Proof Protection</h3>
+                    <p>Premium silicone seal and food-grade materials keep your burrito secure and your bag spotless. Say goodbye to sauce disasters.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <circle cx="10" cy="10" r="3" fill="#FFB3C6"/>
+                                </pattern>
+                                <pattern id="stripes" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                                    <rect x="0" y="0" width="5" height="10" fill="#FF8FA3"/>
+                                </pattern>
+                            </defs>
+                            <rect x="30" y="50" width="50" height="70" rx="12" fill="url(#dots)" stroke="#1B2845" stroke-width="2"/>
+                            <rect x="75" y="40" width="50" height="70" rx="12" fill="#1B2845"/>
+                            <rect x="120" y="55" width="50" height="70" rx="12" fill="url(#stripes)" stroke="#1B2845" stroke-width="2"/>
+                            <circle cx="100" cy="160" r="8" fill="#FFE5EC"/>
+                            <circle cx="80" cy="165" r="6" fill="#FFB3C6"/>
+                            <circle cx="120" cy="165" r="6" fill="#FF8FA3"/>
+                        </svg>
+                    </div>
+                    <h3>Stylishly Versatile</h3>
+                    <p>From florals to geometrics, our curated collection features patterns and colors that complement any style. Fashion meets function.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="70" fill="#FFE5EC" opacity="0.3"/>
+                            <path d="M 100 40 L 110 70 L 140 70 L 115 90 L 125 120 L 100 100 L 75 120 L 85 90 L 60 70 L 90 70 Z" fill="none" stroke="#1B2845" stroke-width="3"/>
+                            <circle cx="100" cy="100" r="25" fill="#1B2845"/>
+                            <path d="M 85 95 Q 100 85 115 95 Q 100 105 85 95" fill="#FFB3C6"/>
+                            <circle cx="92" cy="93" r="3" fill="#FFE5EC"/>
+                            <circle cx="108" cy="93" r="3" fill="#FFE5EC"/>
+                            <path d="M 90 105 Q 100 110 110 105" stroke="#FFE5EC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Sustainably Crafted</h3>
+                    <p>Ditch disposable containers. Our reusable design is eco-friendly, dishwasher safe, and built to last through hundreds of burritos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <h2 class="section-title">Customer Testimonial</h2>
+            <div class="testimonial-card">
+                <div class="quote-mark">"</div>
+                <p class="testimonial-text">The only thing coming home with me after a night at the bar is a delicious burrito. It's like a giant Tylenol that prevents hangovers. Thanks for Purse Burrito, my burrito stays warm and doesn't make a mess in my purse. Also, it's cute as hell.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="redHair" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#C73E1D;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#A52A2A;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Background -->
+                            <circle cx="50" cy="50" r="50" fill="#FFE5EC"/>
+
+                            <!-- Hair back -->
+                            <ellipse cx="50" cy="40" rx="32" ry="35" fill="url(#redHair)"/>
+                            <path d="M 18 40 Q 15 60 20 75 L 30 70 Q 25 55 28 40 Z" fill="url(#redHair)"/>
+                            <path d="M 82 40 Q 85 60 80 75 L 70 70 Q 75 55 72 40 Z" fill="url(#redHair)"/>
+
+                            <!-- Face -->
+                            <circle cx="50" cy="50" r="25" fill="#FFDAB9"/>
+
+                            <!-- Glasses -->
+                            <ellipse cx="40" cy="47" rx="10" ry="9" fill="none" stroke="#1B2845" stroke-width="2.5"/>
+                            <ellipse cx="60" cy="47" rx="10" ry="9" fill="none" stroke="#1B2845" stroke-width="2.5"/>
+                            <line x1="50" y1="47" x2="50" y2="47" stroke="#1B2845" stroke-width="2.5"/>
+                            <ellipse cx="40" cy="47" rx="10" ry="9" fill="#E8F4F8" opacity="0.3"/>
+                            <ellipse cx="60" cy="47" rx="10" ry="9" fill="#E8F4F8" opacity="0.3"/>
+
+                            <!-- Eyes behind glasses -->
+                            <circle cx="38" cy="47" r="3" fill="#1B2845"/>
+                            <circle cx="58" cy="47" r="3" fill="#1B2845"/>
+                            <circle cx="39" cy="46" r="1.5" fill="#FFF"/>
+                            <circle cx="59" cy="46" r="1.5" fill="#FFF"/>
+
+                            <!-- Nose -->
+                            <path d="M 50 50 L 48 56" stroke="#D4A574" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+                            <!-- Smile -->
+                            <path d="M 42 58 Q 50 63 58 58" stroke="#1B2845" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+                            <!-- Hair front/bangs -->
+                            <path d="M 25 35 Q 30 25 35 30 Q 40 22 45 28 Q 50 20 55 28 Q 60 22 65 30 Q 70 25 75 35" fill="url(#redHair)"/>
+                            <ellipse cx="50" cy="28" rx="28" ry="12" fill="url(#redHair)"/>
+
+                            <!-- Body/shoulders -->
+                            <path d="M 25 75 Q 30 85 50 85 Q 70 85 75 75 L 75 100 L 25 100 Z" fill="#1B2845"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Sonia Mansfield</div>
+                        <div class="author-title">Verified Customer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Style</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="product-image">
+                        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="100" cy="130" rx="50" ry="8" fill="#1B2845" opacity="0.1"/>
+                            <rect x="50" y="50" width="100" height="70" rx="20" fill="#FFE5EC" stroke="#1B2845" stroke-width="2"/>
+                            <rect x="50" y="50" width="100" height="15" rx="20" fill="#1B2845"/>
+                            <ellipse cx="100" cy="57.5" rx="10" ry="5" fill="#FFB3C6"/>
+                        </svg>
+                    </div>
+                    <div class="price-header">
+                        <h3>Classic</h3>
+                        <div class="price">$32</div>
+                    </div>
+                    <ul class="price-features">
+                        <li>Single Purse Burrito</li>
+                        <li>Choice of 5 classic colors</li>
+                        <li>Leak-proof seal</li>
+                        <li>Dishwasher safe</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Select Classic</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="product-image">
+                        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="geometric" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                    <polygon points="15,0 30,15 15,30 0,15" fill="#FF8FA3" opacity="0.4"/>
+                                    <circle cx="15" cy="15" r="5" fill="#FFB3C6" opacity="0.6"/>
+                                </pattern>
+                            </defs>
+                            <ellipse cx="100" cy="130" rx="50" ry="8" fill="#1B2845" opacity="0.1"/>
+                            <rect x="50" y="50" width="100" height="70" rx="20" fill="url(#geometric)" stroke="#1B2845" stroke-width="2"/>
+                            <rect x="50" y="50" width="100" height="15" rx="20" fill="#1B2845"/>
+                            <ellipse cx="100" cy="57.5" rx="10" ry="5" fill="#FFB3C6"/>
+                            <text x="100" y="95" text-anchor="middle" fill="#1B2845" font-size="20" font-weight="bold" font-family="serif">A</text>
+                        </svg>
+                    </div>
+                    <div class="price-header">
+                        <h3>Signature Collection</h3>
+                        <div class="price">$48</div>
+                    </div>
+                    <ul class="price-features">
+                        <li>Single Purse Burrito</li>
+                        <li>15+ designer patterns</li>
+                        <li>Premium materials</li>
+                        <li>Leak-proof seal</li>
+                        <li>Monogram option</li>
+                        <li>Gift packaging</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Select Signature</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="product-image">
+                        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="bundle-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <circle cx="10" cy="10" r="3" fill="#FFB3C6"/>
+                                </pattern>
+                            </defs>
+                            <ellipse cx="100" cy="130" rx="70" ry="10" fill="#1B2845" opacity="0.1"/>
+                            <rect x="25" y="65" width="60" height="50" rx="15" fill="url(#bundle-dots)" stroke="#1B2845" stroke-width="2"/>
+                            <rect x="25" y="65" width="60" height="10" rx="15" fill="#1B2845"/>
+                            <rect x="70" y="50" width="60" height="50" rx="15" fill="#1B2845" opacity="0.9"/>
+                            <rect x="70" y="50" width="60" height="10" rx="15" fill="#1B2845"/>
+                            <rect x="115" y="70" width="60" height="50" rx="15" fill="#FFB3C6" stroke="#1B2845" stroke-width="2"/>
+                            <rect x="115" y="70" width="60" height="10" rx="15" fill="#1B2845"/>
+                        </svg>
+                    </div>
+                    <div class="price-header">
+                        <h3>Bundle Set</h3>
+                        <div class="price">$85</div>
+                    </div>
+                    <ul class="price-features">
+                        <li>Set of 3 Purse Burritos</li>
+                        <li>Mix & match patterns</li>
+                        <li>All premium features</li>
+                        <li>Save $59</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Select Bundle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Purse Burrito</div>
+                    <p>Elevating your burrito experience, one stylish container at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Shop</h4>
+                        <a href="#">All Products</a>
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Best Sellers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Sustainability</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Purse Burrito. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeLabel = themeToggle.querySelector('.theme-label');
+        const body = document.body;
+
+        // Load saved theme preference
+        const savedTheme = localStorage.getItem('purse-burrito-theme') || 'mild';
+        if (savedTheme === 'spicy') {
+            body.classList.add('dark-theme');
+            themeLabel.textContent = 'Spicy';
+        }
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isSpicy = body.classList.contains('dark-theme');
+            themeLabel.textContent = isSpicy ? 'Spicy' : 'Mild';
+            localStorage.setItem('purse-burrito-theme', isSpicy ? 'spicy' : 'mild');
+        });
+    </script>
+</body>
+</html>
